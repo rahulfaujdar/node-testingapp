@@ -26,7 +26,7 @@ const mongo = "mongodb+srv://test:Password1234@test.wn9hp.mongodb.net/test?retry
 //     }
 // }).promise();
 
-export const connectTestDb = () => mongoose.connect(mongo, {
+export const connectTestDb = () => mongoose.connect(MONGO_CONNECTION_URL, {
     useCreateIndex: true,
     useUnifiedTopology: true
 });
