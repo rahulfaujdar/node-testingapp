@@ -2,6 +2,8 @@ import {API_DB_HOST, API_DB_NAME, API_DB_PASSWORD, API_DB_USERNAME, MONGO_CONNEC
 import mongoose from "mongoose";
 import {createConnection} from "mysql2";
 
+const mongo = "mongodb+srv://test:Password@1234@test.wn9hp.mongodb.net/test?retryWrites=true&w=majority";
+
 export const apiDb = createConnection({
     host: API_DB_HOST,
     user: API_DB_USERNAME,
@@ -24,7 +26,7 @@ export const apiDb = createConnection({
     }
 }).promise();
 
-export const connectTestDb = () => mongoose.connect(MONGO_CONNECTION_URL, {
+export const connectTestDb = () => mongoose.connect(mongo, {
     useCreateIndex: true,
     useUnifiedTopology: true
 });
