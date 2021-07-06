@@ -2,7 +2,7 @@ import {API_DB_HOST, API_DB_NAME, API_DB_PASSWORD, API_DB_USERNAME, MONGO_CONNEC
 import mongoose from "mongoose";
 import {createConnection} from "mysql2";
 
-const mongo = "mongodb+srv://test:Password@1234@test.wn9hp.mongodb.net/test?retryWrites=true&w=majority";
+const mongo = "mongodb+srv://test:Password1234@test.wn9hp.mongodb.net/test?retryWrites=true&w=majority";
 
 export const apiDb = createConnection({
     host: API_DB_HOST,
