@@ -23,15 +23,15 @@ app.use(function (err, req, res, next){
     res.json(error(err.message));
 });
 
-app.listen(Number(PORT), HOST, () => {
-        console.log(`listening on ${HOST}:${PORT}`);
-    });
-
-// Promise.all([connectTestDb()]).then(() => {
-//     app.listen(Number(PORT), HOST, () => {
+// app.listen(Number(PORT), HOST, () => {
 //         console.log(`listening on ${HOST}:${PORT}`);
 //     });
-//     // noinspection JSIgnoredPromiseFromCall
-//     runScheduler();
-// });
+
+Promise.all([connectTestDb()]).then(() => {
+    app.listen(Number(PORT), HOST, () => {
+        console.log(`listening on ${HOST}:${PORT}`);
+    });
+    // noinspection JSIgnoredPromiseFromCall
+    runScheduler();
+});
 
