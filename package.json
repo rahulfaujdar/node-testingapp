@@ -37,7 +37,7 @@
     "@typescript-eslint/parser": "^4.28.1",
     "eslint": "^7.30.0",
     "eslint-plugin-react": "^7.24.0",
-    "typescript": "^4.3.5",
+    "typescript": "^4.3.5"
   },
   "nodemonConfig": {
     "ignore": [
