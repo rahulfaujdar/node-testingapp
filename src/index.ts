@@ -14,7 +14,6 @@ global.navigator = () => null;
 global.moment = moment;
 
 requireDir("./controllers");
-requireDir("./controllers/data");
 requireDir("./models");
 requireDir("./routes");
 
