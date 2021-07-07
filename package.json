@@ -28,6 +28,9 @@
     "start": "node --inspect -r ts-node/register/transpile-only ./src/index.ts",
     "serve": "nodemon"
   },
+  "devDependencies": {
+   "typescript": "^4.3.5"
+  },
   "nodemonConfig": {
     "ignore": [
       ".git",
